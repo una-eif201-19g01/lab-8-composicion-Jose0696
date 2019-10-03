@@ -1,5 +1,16 @@
-//
-// Created by Maikol Guzman  on 2019-09-26.
-//
-
 #include "Motor.h"
+
+Motor::Motor() {
+}
+
+Motor::Motor(bool esta) {
+	estado = esta;
+}
+
+void Motor::encender() {
+	estado = true;
+}
+
+void Motor::apagar() {
+	estado = false;
+}
